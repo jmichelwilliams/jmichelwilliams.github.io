@@ -7,8 +7,7 @@ const Header = () => {
     <Wrapper>
       <ProfilePictureContainer>
         <ProfilePicture src={profilePic}></ProfilePicture>
-      </ProfilePictureContainer>
-      <div>
+
         <List>
           <li>
             <Link href="https://github.com/jmichelwilliams?tab=repositories">
@@ -26,7 +25,8 @@ const Header = () => {
             </Link>
           </li>
         </List>
-      </div>
+      </ProfilePictureContainer>
+
       <div>
         <h1>James Michel-Williams</h1>
       </div>
@@ -36,6 +36,7 @@ const Header = () => {
 
 const List = styled.ul`
   list-style: none;
+  padding: 4px 8px;
 `;
 
 const ProfilePictureContainer = styled.div`
@@ -45,10 +46,13 @@ const ProfilePictureContainer = styled.div`
 `;
 const ProfilePicture = styled.img`
   border-radius: 30px;
+  width: 150px;
+  margin-top: 4px;
 `;
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
 `;
 
 const Link = styled.a`
