@@ -4,28 +4,55 @@ import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 const Header = () => {
   return (
-    <div>
-      <div>
-        <img src={profilePic}></img>
-      </div>
+    <Wrapper>
+      <ProfilePictureContainer>
+        <ProfilePicture src={profilePic}></ProfilePicture>
+      </ProfilePictureContainer>
       <div>
         <List>
           <li>
-            <FiGithub />
+            <Link href="https://github.com/jmichelwilliams?tab=repositories">
+              <FiGithub style={{ height: "3em", width: "3em" }} />
+            </Link>
           </li>
           <li>
-            <FiLinkedin />
+            <Link href="https://www.linkedin.com/in/james-michel-williams-9b11382b/">
+              <FiLinkedin style={{ height: "3em", width: "3em" }} />
+            </Link>
           </li>
           <li>
-            <FiMail />
+            <Link href="mailto:jmichelwilliams@gmail.com">
+              <FiMail style={{ height: "3em", width: "3em" }} />
+            </Link>
           </li>
         </List>
       </div>
-    </div>
+      <div>
+        <h1>James Michel-Williams</h1>
+      </div>
+    </Wrapper>
   );
 };
 
 const List = styled.ul`
-  list-style-type: style none;
+  list-style: none;
+`;
+
+const ProfilePictureContainer = styled.div`
+  display: flex;
+  width: 150px;
+  height: 150px;
+`;
+const ProfilePicture = styled.img`
+  border-radius: 30px;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+`;
+
+const Link = styled.a`
+  text-decoration: none;
+  color: black;
 `;
 export default Header;
