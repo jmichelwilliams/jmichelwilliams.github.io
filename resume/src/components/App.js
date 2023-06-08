@@ -1,5 +1,11 @@
+import Header from "./Header";
+
 const App = () => {
-  return <div>hello world!123</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 };
 
 export default App;
