@@ -42,7 +42,7 @@ const Box = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   width: 200px;
-  border: 4px solid black;
+  border: 4px solid white;
   border-radius: 16px;
 `;
 

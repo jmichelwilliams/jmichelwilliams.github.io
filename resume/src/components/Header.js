@@ -57,6 +57,6 @@ const Wrapper = styled.div`
 
 const Link = styled.a`
   text-decoration: none;
-  color: black;
+  color: white;
 `;
 export default Header;

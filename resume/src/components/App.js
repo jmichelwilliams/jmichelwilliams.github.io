@@ -6,18 +6,35 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Education from "./Education";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+
+const theme = createTheme({
+  palette: {
+    mode: "dark",
+    primary: {
+      main: "rgb(115, 87, 185)",
+    },
+    secondary: {
+      main: "#ffea00",
+    },
+  },
+});
 
 const App = () => {
   return (
-    <Wrapper>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <GlobalStyle />
-      <Header />
-      <Navbar />
-      <About />
-      <Skills />
-      <Projects />
-      <Education />
-    </Wrapper>
+      <Wrapper>
+        <Header />
+        <Navbar />
+        <About />
+        <Skills />
+        <Projects />
+        <Education />
+      </Wrapper>
+    </ThemeProvider>
   );
 };
 

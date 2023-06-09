@@ -23,7 +23,7 @@ const Navbar = () => {
 
 const CustomizedButton = styled(Button)`
   width: 150px;
-  color: black;
+  color: white;
   font-size: 20px;
 `;
 
