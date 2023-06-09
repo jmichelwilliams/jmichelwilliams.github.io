@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "./Header";
 import Navbar from "./Navbar";
 import { styled } from "styled-components";
@@ -6,8 +7,15 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Education from "./Education";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useTheme, createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+
+import IconButton from "@mui/material/IconButton";
+import Box from "@mui/material/Box";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
+import Brightness7Icon from "@mui/icons-material/Brightness7";
+
+const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
 const theme = createTheme({
   palette: {

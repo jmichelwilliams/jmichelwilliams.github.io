@@ -8,7 +8,7 @@ const Skills = () => {
         <Box>
           <SubTitle>Front End</SubTitle>
           <StyledParagraph>
-            React, Styled-Components, JavaScript, HTML5, CSS, ES6
+            React, Styled-Components, JavaScript, HTML5, CSS, ES6, Debugging
           </StyledParagraph>
         </Box>
 
