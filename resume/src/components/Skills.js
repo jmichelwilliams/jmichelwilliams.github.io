@@ -3,21 +3,21 @@ import { styled } from "styled-components";
 const Skills = () => {
   return (
     <Wrapper>
-      <h2>Skills</h2>
+      <StyledTitle>Skills</StyledTitle>
       <BoxContainer>
         <Box>
-          <h3>Front End</h3>
+          <SubTitle>Front End</SubTitle>
           <StyledParagraph>
             React, Styled-Components, JavaScript, HTML5, CSS, ES6
           </StyledParagraph>
         </Box>
 
         <Box>
-          <h3>Back End</h3>
+          <SubTitle>Back End</SubTitle>
           <StyledParagraph>Node.js, Express.js</StyledParagraph>
         </Box>
         <Box>
-          <h3>Tools</h3>
+          <SubTitle>Tools</SubTitle>
           <StyledParagraph>Github, Jira, npm</StyledParagraph>
         </Box>
       </BoxContainer>
@@ -34,16 +34,32 @@ const BoxContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 16px;
 `;
 
 const Box = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 150px;
+  justify-content: center;
+  width: 200px;
+  border: 4px solid black;
 `;
 
 const StyledParagraph = styled.p`
   width: 100%;
   word-wrap: break-word;
+  font-size: 18px;
+  text-align: center;
 `;
+
+const StyledTitle = styled.h2`
+  font-size: 36px;
+  margin-bottom: 4px;
+`;
+
+const SubTitle = styled.h3`
+  font-size: 30px;
+  margin: 8px;
+`;
+
 export default Skills;

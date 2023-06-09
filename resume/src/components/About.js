@@ -17,9 +17,11 @@ const About = () => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: lightgray;
+  border-radius: 12px;
 `;
 
-const StyledTitle = styled.h3`
+const StyledTitle = styled.h2`
   font-size: 36px;
   margin-bottom: 0px;
 `;

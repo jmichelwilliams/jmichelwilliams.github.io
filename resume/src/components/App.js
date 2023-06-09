@@ -5,6 +5,7 @@ import GlobalStyle from "../GlobalStyles";
 import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Education from "./Education";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
+      <Education />
     </Wrapper>
   );
 };
@@ -22,7 +24,6 @@ const App = () => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 70%;
   margin: 0 auto;
 `;

@@ -1,10 +1,23 @@
+import styled from "styled-components";
+
 const Projects = () => {
   return (
-    <div>
-      <h2>Projects</h2>
+    <Wrapper>
+      <StyledTitle>Projects</StyledTitle>
       <p>Projects to come!</p>
-    </div>
+    </Wrapper>
   );
 };
+const StyledTitle = styled.h2`
+  font-size: 36px;
+  margin-bottom: 0px;
+`;
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  border-radius: 12px;
+  margin-top: 16px;
+`;
 export default Projects;
