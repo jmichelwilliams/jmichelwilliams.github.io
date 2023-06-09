@@ -43,6 +43,7 @@ const Box = styled.div`
   justify-content: center;
   width: 200px;
   border: 4px solid black;
+  border-radius: 16px;
 `;
 
 const StyledParagraph = styled.p`

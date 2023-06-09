@@ -1,16 +1,30 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
+import { Box } from "@mui/system";
+import ButtonGroup from "@mui/material/ButtonGroup";
+import { styled } from "@mui/material/styles";
 
 const Navbar = () => {
   return (
-    <Stack direction="row" spacing={10}>
-      <Button>About</Button>
-      <Button>Skills</Button>
-      <Button>Projects</Button>
-      <Button>Education</Button>
-    </Stack>
+    <Box>
+      <ButtonGroup
+        variant="text"
+        aria-label="text button group"
+        color="secondary"
+      >
+        <CustomizedButton>About</CustomizedButton>
+        <CustomizedButton>Skills</CustomizedButton>
+        <CustomizedButton>Projects</CustomizedButton>
+        <CustomizedButton>Education</CustomizedButton>
+      </ButtonGroup>
+    </Box>
   );
 };
+
+const CustomizedButton = styled(Button)`
+  width: 150px;
+  color: black;
+  font-size: 20px;
+`;
 
 export default Navbar;

@@ -5,10 +5,9 @@ const About = () => {
     <Wrapper>
       <StyledTitle>About</StyledTitle>
       <StyledParagraph>
-        Junior front-end developper looking for work! Recently discovered my
-        passion for coding though a coding bootcamp at Concordia University. I
-        have a strong drive to learn. Currently looking to start my carreer in
-        web developpement.{" "}
+        Being in the IT field for 14 years, In 2022, I decided to enroll myself
+        into the Concordia Coding Bootcamp. I was looking for a new challenge
+        and fell in love with web developpment.
       </StyledParagraph>
     </Wrapper>
   );
