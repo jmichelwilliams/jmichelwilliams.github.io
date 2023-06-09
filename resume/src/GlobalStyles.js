@@ -24,7 +24,9 @@ const GlobalStyle = createGlobalStyle`
         border: 0;
         font-size: 100%;
         font: inherit;
+       
         vertical-align: baseline;
+       
     }
 
     input {
@@ -33,6 +35,10 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 
+    h2{
+       
+        color:rgb(164, 255, 154)
+    }
     /* HTML5 display-role reset for older browsers */
     article, aside, details, figcaption, figure, 
     footer, header, hgroup, menu, nav, section {
@@ -41,6 +47,9 @@ const GlobalStyle = createGlobalStyle`
     body,textarea {
         line-height: 1;
         font-family:'Roboto' , sans-serif;
+        background-color:rgb(24, 24, 47);
+        color: rgb(248,201,46)
+  
     }
     ol, ul {
         list-style: none;

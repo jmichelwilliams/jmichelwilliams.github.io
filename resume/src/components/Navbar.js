@@ -10,7 +10,7 @@ const Navbar = () => {
       <ButtonGroup
         variant="text"
         aria-label="text button group"
-        color="secondary"
+        sx={{ color: "rgb(164, 255, 154)", margin: "16px 0px" }}
       >
         <CustomizedButton>About</CustomizedButton>
         <CustomizedButton>Skills</CustomizedButton>
@@ -23,7 +23,7 @@ const Navbar = () => {
 
 const CustomizedButton = styled(Button)`
   width: 150px;
-  color: white;
+  color: rgb(248, 201, 46);
   font-size: 20px;
 `;
 

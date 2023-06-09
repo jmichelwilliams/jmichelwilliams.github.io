@@ -16,7 +16,7 @@ const About = () => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-
+  margin: 16px 0px;
   border-radius: 12px;
 `;
 
