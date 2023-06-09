@@ -11,17 +11,34 @@ const Header = () => {
         <List>
           <li>
             <Link href="https://github.com/jmichelwilliams?tab=repositories">
-              <FiGithub style={{ height: "3em", width: "3em" }} />
+              <FiGithub
+                style={{
+                  height: "3em",
+                  width: "3em",
+                }}
+              />
             </Link>
           </li>
           <li>
             <Link href="https://www.linkedin.com/in/james-michel-williams-9b11382b/">
-              <FiLinkedin style={{ height: "3em", width: "3em" }} />
+              <FiLinkedin
+                style={{
+                  height: "3em",
+                  width: "3em",
+                  color: "rgb(45, 100, 188)",
+                }}
+              />
             </Link>
           </li>
           <li>
             <Link href="mailto:jmichelwilliams@gmail.com">
-              <FiMail style={{ height: "3em", width: "3em" }} />
+              <FiMail
+                style={{
+                  height: "3em",
+                  width: "3em",
+                  color: "rgb(248,201,46)",
+                }}
+              />
             </Link>
           </li>
         </List>

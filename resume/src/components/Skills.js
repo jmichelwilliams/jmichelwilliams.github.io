@@ -95,7 +95,7 @@ const StyledTitle = styled.h2`
 
 const SubTitle = styled.h3`
   font-size: 30px;
-  margin-top: 24px;
+  margin-top: 28px;
   margin-bottom: 8px;
 `;
 
