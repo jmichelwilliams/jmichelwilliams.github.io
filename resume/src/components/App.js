@@ -1,12 +1,20 @@
 import Header from "./Header";
+import Navbar from "./Navbar";
 import { styled } from "styled-components";
 import GlobalStyle from "../GlobalStyles";
+import About from "./About";
+import Skills from "./Skills";
+import Projects from "./Projects";
 
 const App = () => {
   return (
     <Wrapper>
       <GlobalStyle />
       <Header />
+      <Navbar />
+      <About />
+      <Skills />
+      <Projects />
     </Wrapper>
   );
 };
