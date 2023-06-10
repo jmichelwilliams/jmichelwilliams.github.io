@@ -3,20 +3,25 @@ import Button from "@mui/material/Button";
 import { Box } from "@mui/system";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import { styled } from "@mui/material/styles";
-
+import { deepPurple } from "@mui/material/colors";
 const Navbar = () => {
   return (
     <Box>
-      <ButtonGroup
-        variant="text"
+      {/* <ButtonGroup
+        variant="contained"
         aria-label="text button group"
-        sx={{ color: "rgb(164, 255, 154)", margin: "16px 0px" }}
-      >
-        <CustomizedButton>About</CustomizedButton>
-        <CustomizedButton>Skills</CustomizedButton>
-        <CustomizedButton>Projects</CustomizedButton>
-        <CustomizedButton>Education</CustomizedButton>
-      </ButtonGroup>
+        sx={{
+          color: deepPurple,
+          margin: "8px 0px",
+          "& > *": { mx: 2 },
+          boxShadow: "none",
+        }}
+      > */}
+      <CustomizedButton>About</CustomizedButton>
+      <CustomizedButton>Skills</CustomizedButton>
+      <CustomizedButton>Projects</CustomizedButton>
+      <CustomizedButton>Education</CustomizedButton>
+      {/* </ButtonGroup> */}
     </Box>
   );
 };
@@ -24,7 +29,14 @@ const Navbar = () => {
 const CustomizedButton = styled(Button)`
   width: 150px;
   color: rgb(248, 201, 46);
+  background-color: #221266;
   font-size: 20px;
+  border-radius: 28px;
+  margin-right: 8px;
+
+  &:hover {
+    background-color: ${deepPurple[500]};
+  }
 `;
 
 export default Navbar;

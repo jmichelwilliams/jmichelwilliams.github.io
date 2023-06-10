@@ -6,8 +6,8 @@ const Education = () => {
       <StyledTitle>Education</StyledTitle>
       <StyledSchool>Concordia University</StyledSchool>
       <StyledParagraph>
-        Full Stack Web Development, Computer ProgrammingFull Stack Web
-        Development, Computer Programming Jan 2023 - Aug 2023
+        Full Stack Web Development Bootcamp - Computer Programming Jan 2023 -
+        Aug 2023
       </StyledParagraph>
     </Wrapper>
   );
@@ -25,11 +25,13 @@ const StyledTitle = styled.h2`
 
 const StyledSchool = styled.h3`
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
+  margin-bottom: 0px;
 `;
 const StyledParagraph = styled.p`
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
+  color: rgb(151, 255, 255);
 `;
 
 export default Education;

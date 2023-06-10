@@ -55,6 +55,11 @@ const BoxContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   margin-top: 16px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const TitleContainer = styled.div`
@@ -75,6 +80,7 @@ const Box = styled.div`
   border: 4px solid rgb(151, 255, 255);
   border-radius: 16px;
   position: relative;
+  margin-bottom: 16px;
 `;
 
 const StyledParagraph = styled.p`

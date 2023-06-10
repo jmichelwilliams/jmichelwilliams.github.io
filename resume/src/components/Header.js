@@ -36,7 +36,7 @@ const Header = () => {
                 style={{
                   height: "3em",
                   width: "3em",
-                  color: "rgb(248,201,46)",
+                  color: "white",
                 }}
               />
             </Link>
@@ -76,4 +76,5 @@ const Link = styled.a`
   text-decoration: none;
   color: white;
 `;
+
 export default Header;
