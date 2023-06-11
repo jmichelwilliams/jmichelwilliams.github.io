@@ -83,6 +83,7 @@ const Link = styled.a`
 const Name = styled.h1`
   font-size: 30px;
   @media (max-width: 768px) {
+    font-size: 28px;
     align-items: center;
   }
 `;
