@@ -33,7 +33,7 @@ const CustomizedButton = styled(Button)`
   font-size: 20px;
   border-radius: 28px;
   margin-right: 8px;
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
 
   &:hover {
     background-color: ${deepPurple[500]};
