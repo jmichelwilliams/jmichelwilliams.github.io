@@ -48,6 +48,10 @@ const Skills = () => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 const BoxContainer = styled.div`

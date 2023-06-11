@@ -24,6 +24,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   margin: 16px 0px;
   border-radius: 12px;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 const StyledTitle = styled.h2`

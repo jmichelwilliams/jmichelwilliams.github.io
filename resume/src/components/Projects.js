@@ -19,5 +19,9 @@ const Wrapper = styled.div`
 
   border-radius: 12px;
   margin-top: 16px;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 export default Projects;

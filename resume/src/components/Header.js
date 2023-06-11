@@ -45,7 +45,7 @@ const Header = () => {
       </ProfilePictureContainer>
 
       <div>
-        <h1>James Michel-Williams</h1>
+        <Name>James Michel-Williams</Name>
       </div>
     </Wrapper>
   );
@@ -70,6 +70,9 @@ const ProfilePicture = styled.img`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 const Link = styled.a`
@@ -77,4 +80,10 @@ const Link = styled.a`
   color: white;
 `;
 
+const Name = styled.h1`
+  font-size: 30px;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+`;
 export default Header;
