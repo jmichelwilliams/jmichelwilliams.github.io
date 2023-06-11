@@ -26,6 +26,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 70%;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export default App;
