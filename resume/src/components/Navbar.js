@@ -6,7 +6,7 @@ import { styled } from "@mui/material/styles";
 import { deepPurple } from "@mui/material/colors";
 const Navbar = () => {
   return (
-    <Box>
+    <CustomizedBox>
       {/* <ButtonGroup
         variant="contained"
         aria-label="text button group"
@@ -22,7 +22,7 @@ const Navbar = () => {
       <CustomizedButton>Projects</CustomizedButton>
       <CustomizedButton>Education</CustomizedButton>
       {/* </ButtonGroup> */}
-    </Box>
+    </CustomizedBox>
   );
 };
 
@@ -33,10 +33,17 @@ const CustomizedButton = styled(Button)`
   font-size: 20px;
   border-radius: 28px;
   margin-right: 8px;
+  /* margin-bottom: 16px; */
 
   &:hover {
     background-color: ${deepPurple[500]};
   }
 `;
 
+const CustomizedBox = styled(Box)`
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
 export default Navbar;
