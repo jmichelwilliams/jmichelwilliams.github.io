@@ -3,23 +3,23 @@ import Button from "@mui/material/Button";
 import { Box } from "@mui/system";
 import { styled } from "@mui/material/styles";
 import { deepPurple } from "@mui/material/colors";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   return (
     <CustomizedBox>
-      <Link to="#about">
+      <HashLink to="#about">
         <CustomizedButton>About</CustomizedButton>
-      </Link>
-      <Link to="#skills">
+      </HashLink>
+      <HashLink to="#skills">
         <CustomizedButton>Skills</CustomizedButton>
-      </Link>
-      <Link to="#projects">
+      </HashLink>
+      <HashLink to="#projects">
         <CustomizedButton>Projects</CustomizedButton>
-      </Link>
-      <Link to="#education">
+      </HashLink>
+      <HashLink to="#education">
         <CustomizedButton>Education</CustomizedButton>
-      </Link>
+      </HashLink>
     </CustomizedBox>
   );
 };
