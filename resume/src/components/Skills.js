@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 const Skills = () => {
   return (
     <Wrapper>
-      <StyledTitle>Skills</StyledTitle>
+      <StyledTitle id="skills">Skills</StyledTitle>
       <BoxContainer>
         <Box>
           <TitleContainer>

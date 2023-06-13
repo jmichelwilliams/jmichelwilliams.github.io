@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Projects = () => {
   return (
     <Wrapper>
-      <StyledTitle>Projects</StyledTitle>
+      <StyledTitle id="projects">Projects</StyledTitle>
       <p>Projects to come!</p>
     </Wrapper>
   );

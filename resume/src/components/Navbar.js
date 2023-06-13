@@ -1,27 +1,25 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
 import { Box } from "@mui/system";
-import ButtonGroup from "@mui/material/ButtonGroup";
 import { styled } from "@mui/material/styles";
 import { deepPurple } from "@mui/material/colors";
+import { HashLink as Link } from "react-router-hash-link";
+
 const Navbar = () => {
   return (
     <CustomizedBox>
-      {/* <ButtonGroup
-        variant="contained"
-        aria-label="text button group"
-        sx={{
-          color: deepPurple,
-          margin: "8px 0px",
-          "& > *": { mx: 2 },
-          boxShadow: "none",
-        }}
-      > */}
-      <CustomizedButton>About</CustomizedButton>
-      <CustomizedButton>Skills</CustomizedButton>
-      <CustomizedButton>Projects</CustomizedButton>
-      <CustomizedButton>Education</CustomizedButton>
-      {/* </ButtonGroup> */}
+      <Link to="#about">
+        <CustomizedButton>About</CustomizedButton>
+      </Link>
+      <Link to="#skills">
+        <CustomizedButton>Skills</CustomizedButton>
+      </Link>
+      <Link to="#projects">
+        <CustomizedButton>Projects</CustomizedButton>
+      </Link>
+      <Link to="#education">
+        <CustomizedButton>Education</CustomizedButton>
+      </Link>
     </CustomizedBox>
   );
 };
@@ -46,4 +44,5 @@ const CustomizedBox = styled(Box)`
     align-items: center;
   }
 `;
+
 export default Navbar;

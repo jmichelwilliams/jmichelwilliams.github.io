@@ -6,18 +6,21 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Education from "./Education";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const App = () => {
   return (
-    <Wrapper>
-      <GlobalStyle />
-      <Header />
-      <Navbar />
-      <About />
-      <Skills />
-      <Projects />
-      <Education />
-    </Wrapper>
+    <Router>
+      <Wrapper>
+        <GlobalStyle />
+        <Header />
+        <Navbar />
+        <About />
+        <Skills />
+        <Projects />
+        <Education />
+      </Wrapper>
+    </Router>
   );
 };
 

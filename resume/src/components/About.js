@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 const About = () => {
   return (
     <Wrapper>
-      <StyledTitle>About</StyledTitle>
+      <StyledTitle id="about">About</StyledTitle>
       <Intro>Hello! I'm James!</Intro>
       <StyledParagraph>
         I started my journey in the Tech industry nearly 14 years ago as an IT

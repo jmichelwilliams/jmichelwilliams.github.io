@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Education = () => {
   return (
     <Wrapper>
-      <StyledTitle>Education</StyledTitle>
+      <StyledTitle id="education">Education</StyledTitle>
       <StyledSchool>Concordia University</StyledSchool>
       <StyledParagraph>
         Full Stack Web Development Bootcamp - Computer Programming Jan 2023 -
