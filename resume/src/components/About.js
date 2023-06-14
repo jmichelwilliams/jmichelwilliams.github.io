@@ -6,14 +6,14 @@ const About = () => {
       <StyledTitle id="about">About</StyledTitle>
       <Intro>Hello! I'm James!</Intro>
       <StyledParagraph>
-        I started my journey in the Tech industry nearly 14 years ago as an IT
-        Technician and over time became a MDM specialist. In 2022, I was looking
-        for a new challenge and I decided to enroll myself into the Concordia
-        Coding Bootcamp.{" "}
-        <StyledSpan>I fell in love with web developpment.</StyledSpan> It's all
-        I think about now 😄 I can apply certain skills such as{" "}
-        <StyledSpan>Troubleshooting</StyledSpan> when I code. I'm eager to
-        embark on this new journey and learn as much as I can.
+        With nearly 14 years of experience in the IT industry, I bring a strong
+        foundation in troubleshooting, teamwork, and agile methodologies using
+        tools like Jira to my transition into web development. Enrolling in the
+        Concordia Coding Bootcamp in 2023 ignited my passion for this field,
+        where I combine my troubleshooting skills with coding to ensure seamless
+        functionality of web applications. Eager to embark on this new journey,
+        I am driven by a thirst for knowledge and a commitment to learn and grow
+        as a web developer.
       </StyledParagraph>
     </Wrapper>
   );
