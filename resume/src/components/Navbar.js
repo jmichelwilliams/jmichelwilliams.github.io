@@ -8,18 +8,18 @@ import { HashLink } from "react-router-hash-link";
 const Navbar = () => {
   return (
     <CustomizedBox>
-      <HashLink to="#about">
+      <CustomHashLink to="#about">
         <CustomizedButton>About</CustomizedButton>
-      </HashLink>
-      <HashLink to="#skills">
+      </CustomHashLink>
+      <CustomHashLink to="#skills">
         <CustomizedButton>Skills</CustomizedButton>
-      </HashLink>
-      <HashLink to="#projects">
+      </CustomHashLink>
+      <CustomHashLink to="#projects">
         <CustomizedButton>Projects</CustomizedButton>
-      </HashLink>
-      <HashLink to="#education">
+      </CustomHashLink>
+      <CustomHashLink to="#education">
         <CustomizedButton>Education</CustomizedButton>
-      </HashLink>
+      </CustomHashLink>
     </CustomizedBox>
   );
 };
@@ -45,7 +45,7 @@ const CustomizedBox = styled(Box)`
   }
 `;
 
-const HashLink = styled(HashLink)`
+const CustomHashLink = styled(HashLink)`
   text-decoration: none;
 `;
 export default Navbar;
