@@ -36,7 +36,8 @@ const CustomizedButton = styled(Button)`
   &:hover {
     background-color: ${deepPurple[500]};
   }
-  @media (max-width: 768px) {
+  /* Add this line to remove the text decoration */
+  > a {
     text-decoration: none;
   }
 `;
