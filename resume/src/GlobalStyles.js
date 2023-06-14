@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
     }
     body,textarea {
         line-height: 1;
-        font-family:'Roboto' , sans-serif;
+        font-family: 'DM Sans', sans-serif;
         background-color:rgb(24, 24, 47);
         color: rgb(248,201,46)
   

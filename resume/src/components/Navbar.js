@@ -32,9 +32,12 @@ const CustomizedButton = styled(Button)`
   border-radius: 28px;
   margin-right: 8px;
   margin-bottom: 16px;
-
+  text-decoration: none;
   &:hover {
     background-color: ${deepPurple[500]};
+  }
+  @media (max-width: 768px) {
+    text-decoration: none;
   }
 `;
 
