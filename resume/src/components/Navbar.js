@@ -36,10 +36,6 @@ const CustomizedButton = styled(Button)`
   &:hover {
     background-color: ${deepPurple[500]};
   }
-  /* Add this line to remove the text decoration */
-  > a {
-    text-decoration: none;
-  }
 `;
 
 const CustomizedBox = styled(Box)`
@@ -49,4 +45,7 @@ const CustomizedBox = styled(Box)`
   }
 `;
 
+const HashLink = styled(HashLink)`
+  text-decoration: none;
+`;
 export default Navbar;
