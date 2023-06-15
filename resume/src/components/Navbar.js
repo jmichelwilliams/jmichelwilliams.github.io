@@ -1,7 +1,7 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
 import { Box } from "@mui/system";
-import { styled } from "@mui/material/styles";
+import { styled, keyframes } from "@mui/material/styles";
 import { deepPurple } from "@mui/material/colors";
 import { HashLink } from "react-router-hash-link";
 import Wrapper from "./Wrapper";
@@ -40,11 +40,29 @@ const CustomizedButton = styled(Button)`
     background-color: ${deepPurple[500]};
   }
 `;
+const slideInAnimationUpToDown = keyframes`
+from {
+  transform: translateY(-100%);
+}
+to {
+  transform: translateY(0);
+}
+`;
 
+const slideInAnimationRightToLeft = keyframes`
+from {
+  transform: translateX(100%);
+}
+to {
+  transform: translateY(0);
+}
+`;
 const CustomizedBox = styled(Box)`
+  animation: ${slideInAnimationUpToDown} 1s ease-in-out;
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+    animation: ${slideInAnimationRightToLeft} 1s ease-in-out;
   }
 `;
 
