@@ -34,6 +34,7 @@ const CustomizedButton = styled(Button)`
   font-size: 20px;
   border-radius: 28px;
   margin-right: 8px;
+  margin-left: 7px;
   margin-bottom: 16px;
   text-decoration: none;
   &:hover {
