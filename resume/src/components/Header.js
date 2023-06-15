@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { styled, keyframes } from "styled-components";
 import profilePic from "../images/JamesProfilePicture.jpeg";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import Wrapper from "./Wrapper";
@@ -56,11 +56,29 @@ const List = styled.ul`
   list-style: none;
   padding: 4px 8px;
 `;
+const slideInAnimationLeftToRight = keyframes`
+from {
+  transform: translateX(-100%);
+}
+to {
+  transform: translateX(0);
+}
+`;
 
+const slideInAnimationUpToDown = keyframes`
+from {
+  transform: translateY(-100%);
+}
+to {
+  transform: translateY(0);
+}
+`;
 const ProfilePictureContainer = styled.div`
   display: flex;
   width: 150px;
+
   height: 150px;
+  animation: ${slideInAnimationLeftToRight} 1s ease-in-out;
 `;
 const ProfilePicture = styled.img`
   border-radius: 30px;
@@ -75,6 +93,7 @@ const Link = styled.a`
 
 const Name = styled.h1`
   font-size: 30px;
+  animation: ${slideInAnimationUpToDown} 1s ease-in-out;
   @media (max-width: 768px) {
     font-size: 28px;
     align-items: center;
