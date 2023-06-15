@@ -3,7 +3,7 @@ import Wrapper from "./Wrapper";
 
 const Education = () => {
   return (
-    <Wrapper animationDelay={1.5}>
+    <Wrapper animationDelay={1.2}>
       <StyledTitle id="education">Education</StyledTitle>
       <StyledSchool>Concordia University</StyledSchool>
       <StyledParagraph>

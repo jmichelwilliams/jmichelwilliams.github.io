@@ -14,11 +14,11 @@ const Wrapper = ({ children, animationDelay }) => {
   const StyledWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    opacity: 0; /* Initially hide the children */
+    opacity: 0;
 
     animation: ${fadeInAnimation} 1s ease-in-out;
     animation-delay: ${animationDelay}s;
-    animation-fill-mode: forwards; /* Keep the last keyframe state after animation ends */
+    animation-fill-mode: forwards;
 
     @media (max-width: 768px) {
       align-items: center;
