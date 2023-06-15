@@ -1,8 +1,9 @@
 import { styled } from "styled-components";
+import Wrapper from "./Wrapper";
 
 const Skills = () => {
   return (
-    <Wrapper>
+    <Wrapper animationDelay={0.5}>
       <StyledTitle id="skills">Skills</StyledTitle>
       <BoxContainer>
         <Box>
@@ -44,15 +45,6 @@ const Skills = () => {
     </Wrapper>
   );
 };
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (max-width: 768px) {
-    align-items: center;
-  }
-`;
 
 const BoxContainer = styled.div`
   display: flex;

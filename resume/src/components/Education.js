@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import Wrapper from "./Wrapper";
 
 const Education = () => {
   return (
-    <Wrapper>
+    <Wrapper animationDelay={1.5}>
       <StyledTitle id="education">Education</StyledTitle>
       <StyledSchool>Concordia University</StyledSchool>
       <StyledParagraph>
@@ -12,16 +13,6 @@ const Education = () => {
     </Wrapper>
   );
 };
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (max-width: 768px) {
-    align-items: center;
-    text-align: center;
-  }
-`;
 
 const StyledTitle = styled.h2`
   font-size: 36px;

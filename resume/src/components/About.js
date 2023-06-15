@@ -1,8 +1,9 @@
 import { styled } from "styled-components";
+import Wrapper from "./Wrapper";
 
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper animationDelay={0.3}>
       <StyledTitle id="about">About</StyledTitle>
       <Intro>Hello! I'm James!</Intro>
       <StyledParagraph>
@@ -18,18 +19,6 @@ const About = () => {
     </Wrapper>
   );
 };
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 16px 0px;
-  border-radius: 12px;
-
-  @media (max-width: 768px) {
-    align-items: center;
-    text-align: center;
-  }
-`;
 
 const StyledTitle = styled.h2`
   font-size: 36px;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import profilePic from "../images/JamesProfilePicture.jpeg";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import Wrapper from "./Wrapper";
 
 const Header = () => {
   return (
@@ -65,14 +66,6 @@ const ProfilePicture = styled.img`
   border-radius: 30px;
   width: 150px;
   margin-top: 4px;
-`;
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  @media (max-width: 768px) {
-    align-items: center;
-  }
 `;
 
 const Link = styled.a`

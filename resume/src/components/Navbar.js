@@ -4,23 +4,26 @@ import { Box } from "@mui/system";
 import { styled } from "@mui/material/styles";
 import { deepPurple } from "@mui/material/colors";
 import { HashLink } from "react-router-hash-link";
+import Wrapper from "./Wrapper";
 
 const Navbar = () => {
   return (
-    <CustomizedBox>
-      <CustomHashLink to="#about">
-        <CustomizedButton>About</CustomizedButton>
-      </CustomHashLink>
-      <CustomHashLink to="#skills">
-        <CustomizedButton>Skills</CustomizedButton>
-      </CustomHashLink>
-      <CustomHashLink to="#projects">
-        <CustomizedButton>Projects</CustomizedButton>
-      </CustomHashLink>
-      <CustomHashLink to="#education">
-        <CustomizedButton>Education</CustomizedButton>
-      </CustomHashLink>
-    </CustomizedBox>
+    <Wrapper>
+      <CustomizedBox>
+        <CustomHashLink to="#about">
+          <CustomizedButton>About</CustomizedButton>
+        </CustomHashLink>
+        <CustomHashLink to="#skills">
+          <CustomizedButton>Skills</CustomizedButton>
+        </CustomHashLink>
+        <CustomHashLink to="#projects">
+          <CustomizedButton>Projects</CustomizedButton>
+        </CustomHashLink>
+        <CustomHashLink to="#education">
+          <CustomizedButton>Education</CustomizedButton>
+        </CustomHashLink>
+      </CustomizedBox>
+    </Wrapper>
   );
 };
 

@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import Wrapper from "./Wrapper";
 
 const Projects = () => {
   return (
-    <Wrapper>
+    <Wrapper animationDelay={1}>
       <StyledTitle id="projects">Projects</StyledTitle>
       <p>Projects to come!</p>
     </Wrapper>
@@ -13,15 +14,4 @@ const StyledTitle = styled.h2`
   margin-bottom: 0px;
 `;
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  border-radius: 12px;
-  margin-top: 16px;
-
-  @media (max-width: 768px) {
-    align-items: center;
-  }
-`;
 export default Projects;
