@@ -60,7 +60,7 @@ to {
 `;
 const CustomizedBox = styled(Box)`
   animation: ${slideInAnimationUpToDown} 1s ease-in-out;
-  @media (max-width: 768px) {
+  @media (max-width: 740px) {
     flex-direction: column;
     align-items: center;
     animation: ${slideInAnimationRightToLeft} 1s ease-in-out;
