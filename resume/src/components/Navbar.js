@@ -40,6 +40,9 @@ const CustomizedButton = styled(Button)`
   &:hover {
     background-color: ${deepPurple[500]};
   }
+  @media (max-width: 768px) {
+    width: 135px;
+  }
 `;
 const slideInAnimationUpToDown = keyframes`
 from {
@@ -60,7 +63,7 @@ to {
 `;
 const CustomizedBox = styled(Box)`
   animation: ${slideInAnimationUpToDown} 1s ease-in-out;
-  @media (max-width: 740px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     animation: ${slideInAnimationRightToLeft} 1s ease-in-out;
@@ -70,4 +73,5 @@ const CustomizedBox = styled(Box)`
 const CustomHashLink = styled(HashLink)`
   text-decoration: none;
 `;
+
 export default Navbar;

@@ -35,8 +35,4 @@ const Intro = styled.h3`
   color: rgb(151, 255, 255);
 `;
 
-const StyledSpan = styled.span`
-  color: rgb(151, 255, 255);
-  font-weight: bold;
-`;
 export default About;

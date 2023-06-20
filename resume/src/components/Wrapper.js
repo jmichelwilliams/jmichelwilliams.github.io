@@ -22,6 +22,7 @@ const Wrapper = ({ children, animationDelay }) => {
 
     @media (max-width: 768px) {
       align-items: center;
+      text-align: center;
     }
   `;
 
