@@ -94,7 +94,7 @@ const Link = styled.a`
 const Name = styled.h1`
   font-size: 30px;
   animation: ${slideInAnimationUpToDown} 1s ease-in-out;
-  @media (max-width: 768px) {
+  @media (max-width: 740px) {
     font-size: 28px;
     align-items: center;
   }
