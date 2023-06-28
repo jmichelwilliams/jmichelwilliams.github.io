@@ -20,7 +20,7 @@ const Wrapper = ({ children, animationDelay }) => {
     animation-delay: ${animationDelay}s;
     animation-fill-mode: forwards;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1180px) {
       align-items: center;
       text-align: center;
     }
