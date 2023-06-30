@@ -1,5 +1,5 @@
-import { styled } from "styled-components";
-import Wrapper from "./Wrapper";
+import { styled } from 'styled-components';
+import Wrapper from './Wrapper';
 
 const Skills = () => {
   return (
@@ -39,7 +39,7 @@ const Skills = () => {
               <MaximizeButton />
             </WindowButtons>
           </TitleContainer>
-          <StyledParagraph>Github, Jira, npm</StyledParagraph>
+          <StyledParagraph>Github, Jira, npm, ESLint</StyledParagraph>
         </Box>
       </BoxContainer>
     </Wrapper>
