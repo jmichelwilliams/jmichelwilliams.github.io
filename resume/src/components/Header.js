@@ -1,7 +1,7 @@
-import { styled, keyframes } from "styled-components";
-import profilePic from "../images/JamesProfilePicture.jpeg";
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
-import Wrapper from "./Wrapper";
+import { styled, keyframes } from 'styled-components';
+import profilePic from '../images/JamesProfilePicture.jpeg';
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import Wrapper from './Wrapper';
 
 const Header = () => {
   return (
@@ -14,19 +14,19 @@ const Header = () => {
             <Link href="https://github.com/jmichelwilliams?tab=repositories">
               <FiGithub
                 style={{
-                  height: "3em",
-                  width: "3em",
+                  height: '3em',
+                  width: '3em',
                 }}
               />
             </Link>
           </li>
           <li>
-            <Link href="https://www.linkedin.com/in/james-michel-williams-9b11382b/">
+            <Link href="https://www.linkedin.com/in/jmichelwilliams/">
               <FiLinkedin
                 style={{
-                  height: "3em",
-                  width: "3em",
-                  color: "rgb(45, 100, 188)",
+                  height: '3em',
+                  width: '3em',
+                  color: 'rgb(45, 100, 188)',
                 }}
               />
             </Link>
@@ -35,9 +35,9 @@ const Header = () => {
             <Link href="mailto:jmichelwilliams@gmail.com">
               <FiMail
                 style={{
-                  height: "3em",
-                  width: "3em",
-                  color: "white",
+                  height: '3em',
+                  width: '3em',
+                  color: 'white',
                 }}
               />
             </Link>
