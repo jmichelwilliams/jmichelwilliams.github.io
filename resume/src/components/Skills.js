@@ -16,7 +16,8 @@ const Skills = () => {
             </WindowButtons>
           </TitleContainer>
           <StyledParagraph>
-            React, Styled-Components, JavaScript, HTML5, CSS, ES6, Debugging
+            React, Styled-Components, JavaScript, HTML5, CSS, ES6, Material-UI,
+            TypeScript
           </StyledParagraph>
         </Box>
         <Box>
@@ -28,7 +29,9 @@ const Skills = () => {
               <MaximizeButton />
             </WindowButtons>
           </TitleContainer>
-          <StyledParagraph>Node.js, Express</StyledParagraph>
+          <StyledParagraph>
+            Node.js, Express, MongoDB, Auth0, SQL, Axios
+          </StyledParagraph>
         </Box>
         <Box>
           <TitleContainer>
@@ -39,7 +42,9 @@ const Skills = () => {
               <MaximizeButton />
             </WindowButtons>
           </TitleContainer>
-          <StyledParagraph>Github, Jira, npm, ESLint</StyledParagraph>
+          <StyledParagraph>
+            Github, Jira, npm, Yarn, ESLint, Debugging{' '}
+          </StyledParagraph>
         </Box>
       </BoxContainer>
     </Wrapper>
