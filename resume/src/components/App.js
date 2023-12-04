@@ -1,12 +1,12 @@
-import Header from "./Header";
-import Navbar from "./Navbar";
-import { styled } from "styled-components";
-import GlobalStyle from "../GlobalStyles";
-import About from "./About";
-import Skills from "./Skills";
-import Projects from "./Projects";
-import Education from "./Education";
-import { BrowserRouter as Router } from "react-router-dom";
+import Header from './Header';
+import Navbar from './Navbar';
+import { styled } from 'styled-components';
+import GlobalStyle from '../GlobalStyles';
+import About from './About';
+import Skills from './Skills';
+import Projects from './Projects';
+import Education from './Education';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const App = () => {
   return (

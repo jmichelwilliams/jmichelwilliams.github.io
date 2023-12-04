@@ -6,18 +6,30 @@ const Projects = () => {
   return (
     <Wrapper animationDelay={1}>
       <StyledTitle id="projects">Projects</StyledTitle>
-      <ProjectContainer>
-        <StyledProjectTitle>GardenHero</StyledProjectTitle>
-        <Link href="https://garden-hero.vercel.app/">
-          <ProjectImage src={projectPic} alt="GardenHero" />
-        </Link>
-        <Link href="https://github.com/jmichelwilliams/FinalProject-GardenHero">
-          Link to Repo
-        </Link>
-      </ProjectContainer>
+      <ProjectWrapper>
+        <ProjectContainer>
+          <StyledProjectTitle>GardenHero</StyledProjectTitle>
+          <Link href="https://garden-hero.vercel.app/">
+            <ProjectImage src={projectPic} alt="GardenHero" />
+          </Link>
+          <Link href="https://github.com/jmichelwilliams/FinalProject-GardenHero">
+            Link to Repo
+          </Link>
+        </ProjectContainer>
+        <ProjectContainer>
+          <StyledProjectTitle>GardenHero</StyledProjectTitle>
+          <Link href="https://garden-hero.vercel.app/">
+            <ProjectImage src={projectPic} alt="GardenHero" />
+          </Link>
+          <Link href="https://github.com/jmichelwilliams/FinalProject-GardenHero">
+            Link to Repo
+          </Link>
+        </ProjectContainer>
+      </ProjectWrapper>
     </Wrapper>
   );
 };
+
 const StyledTitle = styled.h2`
   font-size: 36px;
   margin-bottom: 0px;
@@ -33,13 +45,29 @@ const Link = styled.a`
   font-size: 18px;
   margin-top: 8px;
 `;
+const ProjectWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
 const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 8px;
 `;
 const ProjectImage = styled.img`
   height: 200px;
   width: 400px;
+  border-radius: 16px;
+
+  @media (max-width: 576px) {
+    width: 300px;
+  }
 `;
 export default Projects;
