@@ -17,7 +17,7 @@ const Skills = () => {
           </TitleContainer>
           <StyledParagraph>
             React, Styled-Components, JavaScript, HTML5, CSS, ES6, Material-UI,
-            TypeScript
+            TypeScript, Redux/Redux Toolkit
           </StyledParagraph>
         </Box>
         <Box>
@@ -30,7 +30,8 @@ const Skills = () => {
             </WindowButtons>
           </TitleContainer>
           <StyledParagraph>
-            Node.js, Express, MongoDB, Auth0, SQL, Axios
+            Node.js, Express, MongoDB, Auth0, SQL, Axios, AWS Cognito, AWS
+            Amplify, Firebase,
           </StyledParagraph>
         </Box>
         <Box>

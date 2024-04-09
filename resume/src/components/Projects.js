@@ -16,15 +16,6 @@ const Projects = () => {
             Link to Repo
           </Link>
         </ProjectContainer>
-        <ProjectContainer>
-          <StyledProjectTitle>GardenHero</StyledProjectTitle>
-          <Link href="https://garden-hero.vercel.app/">
-            <ProjectImage src={projectPic} alt="GardenHero" />
-          </Link>
-          <Link href="https://github.com/jmichelwilliams/FinalProject-GardenHero">
-            Link to Repo
-          </Link>
-        </ProjectContainer>
       </ProjectWrapper>
     </Wrapper>
   );
