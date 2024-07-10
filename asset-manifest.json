@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.afea291f.js",
+    "main.js": "/static/js/main.fe6a34fa.js",
     "static/media/JamesProfilePicture.jpeg": "/static/media/JamesProfilePicture.52750aabe9a07ac69555.jpeg",
     "static/media/Homepage.png": "/static/media/Homepage.077e5dd6c03a729e431f.png",
+    "static/media/FitApp.png": "/static/media/FitApp.397e4609778af72fdf71.png",
     "index.html": "/index.html",
-    "main.afea291f.js.map": "/static/js/main.afea291f.js.map"
+    "main.fe6a34fa.js.map": "/static/js/main.fe6a34fa.js.map"
   },
   "entrypoints": [
-    "static/js/main.afea291f.js"
+    "static/js/main.fe6a34fa.js"
   ]
 }
