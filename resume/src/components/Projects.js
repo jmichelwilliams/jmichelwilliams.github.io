@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Wrapper from './Wrapper';
 import projectPic from '../images/Homepage.png';
+import fitappPic from '../images/FitApp.png';
 
 const Projects = () => {
   return (
@@ -13,6 +14,15 @@ const Projects = () => {
             <ProjectImage src={projectPic} alt="GardenHero" />
           </Link>
           <Link href="https://github.com/jmichelwilliams/FinalProject-GardenHero">
+            Link to Repo
+          </Link>
+        </ProjectContainer>
+        <ProjectContainer>
+          <StyledProjectTitle>FitApp (MobileOnly)</StyledProjectTitle>
+          <Link href="https://fit-app-weld.vercel.app/">
+            <ProjectImage src={fitappPic} alt="FitApp" />
+          </Link>
+          <Link href="https://github.com/jmichelwilliams/fit-app">
             Link to Repo
           </Link>
         </ProjectContainer>
